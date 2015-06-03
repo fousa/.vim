@@ -1,3 +1,13 @@
+" Common
+:let mapleader = ";"
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set expandtab
+set smartindent
+set autoindent
+filetype indent on
+
 " Colors
 syntax enable
 set background=dark
