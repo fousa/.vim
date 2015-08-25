@@ -22,3 +22,7 @@ nnoremap <leader>p :CtrlP<CR>
 " Ag plugin
 set runtimepath^=~/.vim/bundle/ag
 nnoremap <leader>s :Ag<CR>
+
+" FZF
+set runtimepath^=~/.fzf
+nnoremap <leader>f :FZF<CR>
