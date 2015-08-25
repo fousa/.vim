@@ -7,6 +7,7 @@ set expandtab
 set smartindent
 set autoindent
 filetype indent on
+set guifont=Menlo:h14
 
 " Colors
 syntax enable
