@@ -16,6 +16,7 @@ colorscheme solarized
 
 " Ctrlp plugin
 set runtimepath^=~/.vim/bundle/ctrlp.vim
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 nnoremap <leader>p :CtrlP<CR>
 
 " Ag plugin
