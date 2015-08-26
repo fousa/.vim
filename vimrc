@@ -9,6 +9,12 @@ set autoindent
 filetype indent on
 set guifont=Menlo:h14
 
+" Window switching
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
 " Colors
 syntax enable
 set background=dark
