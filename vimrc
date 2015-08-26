@@ -33,3 +33,9 @@ nnoremap <leader>s :Ag<CR>
 " FZF
 set runtimepath^=~/.fzf
 nnoremap <leader>f :FZF<CR>
+
+" Removes trailing spaces
+function! TrimWhiteSpace()
+    %s/\s\+$//e
+endfunction
+nnoremap <silent> <Leader>w :call TrimWhiteSpace()<CR>
