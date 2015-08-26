@@ -6,6 +6,22 @@ set softtabstop=2
 set expandtab
 set smartindent
 set autoindent
+
+set ruler
+set number
+set directory-=.
+set autoread
+set encoding=utf-8
+set ignorecase
+set list
+set listchars=tab:▸\ ,trail:▫
+set scrolloff=3
+set smartcase
+set wildmenu
+set wildmode=longest,list,full
+set hidden
+
+" Font
 filetype indent on
 set guifont=Menlo:h14
 
