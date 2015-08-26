@@ -24,6 +24,7 @@ colorscheme solarized
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
 nnoremap <leader>p :CtrlP<CR>
+nnoremap <leader>b :CtrlPBuffer<CR>
 
 " Ag plugin
 set runtimepath^=~/.vim/bundle/ag
