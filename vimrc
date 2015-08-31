@@ -21,6 +21,9 @@ set wildmenu
 set wildmode=longest,list,full
 set hidden
 
+" Correctly define E
+command! E Explor
+
 " Font
 filetype indent on
 set guifont=Menlo:h14
