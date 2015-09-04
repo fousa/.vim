@@ -39,6 +39,12 @@ syntax enable
 set background=dark
 colorscheme solarized
 
+" Support languages
+au BufNewFile,BufRead Guardfile set filetype=ruby
+au BufNewFile,BufRead Fastfile set filetype=ruby
+au BufNewFile,BufRead Podfile set filetype=ruby
+
+
 " Ctrlp plugin
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
