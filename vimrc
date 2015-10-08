@@ -36,7 +36,7 @@ nnoremap <C-H> <C-W><C-H>
 
 " Colors
 syntax enable
-set background=dark
+set background=light
 colorscheme solarized
 
 " Support languages
