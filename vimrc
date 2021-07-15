@@ -6,7 +6,6 @@ set softtabstop=2
 set expandtab
 set smartindent
 set autoindent
-
 set ruler
 set number
 set directory-=.
@@ -26,7 +25,7 @@ command! E Explor
 
 " Font
 filetype indent on
-set guifont=Menlo:h14
+set guifont=Fira:h14
 
 " Window switching
 nnoremap <C-J> <C-W><C-J>
@@ -34,10 +33,30 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
+" NERD Tree
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
+
+" Start NERDTree and put the cursor back in the other window.
+autocmd VimEnter * NERDTree | wincmd p
+" Exit Vim if NERDTree is the only window remaining in the only tab.
+autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
+
+" lightline
+if !has('gui_running')
+  set t_Co=256
+endif
+set runtimepath^=~/.vim/bundle/lightline.vim
+set laststatus=2
+let g:lightline = { 'colorscheme': 'nord' }
+
 " Colors
 syntax enable
+colorscheme nord
 set background=dark
-colorscheme solarized
+let g:airline_theme='one'
 
 " Support languages
 au BufNewFile,BufRead Guardfile set filetype=ruby
